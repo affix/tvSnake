@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct WorldSize {
 	var width:Int
@@ -66,6 +67,7 @@ class Snake {
 	var points:Array<Point> = []
 	var direction:Direction = .left
 	var directionLocked:Bool = false
+	var gamePoints = 0;
 	
 	init(inSize:WorldSize, length inLength:Int) {
 		self.worldSize = inSize
@@ -95,6 +97,7 @@ class Snake {
 	}
 	
 	func increaseLength(inLength:Int) {
+		gamePoints++
 		let lastPoint:Point = self.points[self.points.count-1]
 		let theOneBeforeLastPoint:Point = self.points[self.points.count-2]
 		var x = lastPoint.x - theOneBeforeLastPoint.x
