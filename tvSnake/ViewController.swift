@@ -9,7 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController, SnakeViewDelegate {
-	@IBOutlet var startButton:UIButton?
+
+	@IBAction func startButton(sender: AnyObject) {
+		startGame()
+	}
+	@IBOutlet weak var startButton: UIButton!
+
+	@IBOutlet weak var menuLabel: UILabel!
+	
 	var snakeView:SnakeView?
 	var timer:NSTimer?
 	
@@ -20,7 +27,6 @@ class ViewController: UIViewController, SnakeViewDelegate {
 		super.viewDidLoad()
 		
 		self.snakeView = SnakeView(frame: self.view.bounds)
-		self.snakeView!.autoresizingMask = .FlexibleWidth | .FlexibleHeight
 		self.view.insertSubview(self.snakeView!, atIndex: 0)
 		
 		if let view = self.snakeView {
@@ -91,6 +97,7 @@ class ViewController: UIViewController, SnakeViewDelegate {
 		}
 		
 		self.startButton!.hidden = true
+		self.menuLabel!.hidden = true
 		let worldSize = WorldSize(width: 24, height: 15)
 		self.snake = Snake(inSize: worldSize, length: 2)
 		self.makeNewFruit()
@@ -100,6 +107,7 @@ class ViewController: UIViewController, SnakeViewDelegate {
 	
 	func endGame() {
 		self.startButton!.hidden = false
+		self.menuLabel!.hidden = false
 		self.timer!.invalidate()
 		self.timer = nil
 	}
