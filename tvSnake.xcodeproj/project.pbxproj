@@ -12,6 +12,8 @@
 		84EE0F731BD1580000BCDD93 /* tvSnake.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84EE0F711BD1580000BCDD93 /* tvSnake.xcdatamodeld */; };
 		84EE0F761BD1580000BCDD93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EE0F741BD1580000BCDD93 /* Main.storyboard */; };
 		84EE0F781BD1580000BCDD93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EE0F771BD1580000BCDD93 /* Assets.xcassets */; };
+		C1FBBD881BD15915002ED4FD /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FBBD871BD15915002ED4FD /* Snake.swift */; };
+		C1FBBD8A1BD1593E002ED4FD /* SnakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FBBD891BD1593E002ED4FD /* SnakeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		84EE0F751BD1580000BCDD93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84EE0F771BD1580000BCDD93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84EE0F791BD1580000BCDD93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1FBBD871BD15915002ED4FD /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+		C1FBBD891BD1593E002ED4FD /* SnakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				84EE0F771BD1580000BCDD93 /* Assets.xcassets */,
 				84EE0F791BD1580000BCDD93 /* Info.plist */,
 				84EE0F711BD1580000BCDD93 /* tvSnake.xcdatamodeld */,
+				C1FBBD871BD15915002ED4FD /* Snake.swift */,
+				C1FBBD891BD1593E002ED4FD /* SnakeView.swift */,
 			);
 			path = tvSnake;
 			sourceTree = "<group>";
@@ -133,6 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1FBBD8A1BD1593E002ED4FD /* SnakeView.swift in Sources */,
+				C1FBBD881BD15915002ED4FD /* Snake.swift in Sources */,
 				84EE0F701BD1580000BCDD93 /* ViewController.swift in Sources */,
 				84EE0F731BD1580000BCDD93 /* tvSnake.xcdatamodeld in Sources */,
 				84EE0F6E1BD1580000BCDD93 /* AppDelegate.swift in Sources */,
@@ -277,6 +285,7 @@
 				84EE0F7E1BD1580000BCDD93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
