@@ -106,7 +106,7 @@ class ViewController: UIViewController, SnakeViewDelegate {
 	
 	func timerMethod(timer:NSTimer) {
 		self.snake?.move()
-		var headHitBody = self.snake?.isHeadHitBody()
+		let headHitBody = self.snake?.isHeadHitBody()
 		if headHitBody == true {
 			self.endGame()
 			return

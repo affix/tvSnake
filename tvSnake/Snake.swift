@@ -74,7 +74,7 @@ class Snake {
 		let x:Int = self.worldSize.width / 2
 		let y:Int = self.worldSize.height / 2
 		for i in 0...inLength {
-			var p:Point = Point(x:x + i, y: y)
+			let p:Point = Point(x:x + i, y: y)
 			self.points.append(p)
 		}
 	}
@@ -120,7 +120,7 @@ class Snake {
 	}
 	
 	func isHeadHitBody() -> Bool {
-		var headPoint = self.points[0]
+		let headPoint = self.points[0]
 		for bodyPoint in self.points[1..<self.points.count] {
 			if (bodyPoint.x == headPoint.x &&
 				bodyPoint.y == headPoint.y) {

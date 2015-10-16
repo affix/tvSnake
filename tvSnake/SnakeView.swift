@@ -17,7 +17,7 @@ class SnakeView : UIView {
 	var delegate:SnakeViewDelegate?
 	
 	required init(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
+		super.init(coder: aDecoder)!
 		self.backgroundColor = UIColor.whiteColor()
 	}
 	
@@ -33,8 +33,8 @@ class SnakeView : UIView {
 			if worldSize.width <= 0 || worldSize.height <= 0 {
 				return
 			}
-			var w = Int(Float(self.bounds.size.width) / Float(worldSize.width))
-			var h = Int(Float(self.bounds.size.height) / Float(worldSize.height))
+			let w = Int(Float(self.bounds.size.width) / Float(worldSize.width))
+			let h = Int(Float(self.bounds.size.height) / Float(worldSize.height))
 			
 			UIColor.blackColor().set()
 			let points = snake.points
