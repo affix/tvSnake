@@ -25,7 +25,7 @@ class SnakeView : UIView {
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		self.backgroundColor = UIColor.whiteColor()
-		pointsLabel = UILabel(frame: CGRectMake(100, 100, 30, 30))
+		pointsLabel = UILabel(frame: CGRectMake(100, 100, 60, 30))
 		pointsLabel.font = UIFont.systemFontOfSize(38)
 		pointsLabel.textAlignment = .Center
 		pointsLabel.textColor = UIColor.darkGrayColor()
