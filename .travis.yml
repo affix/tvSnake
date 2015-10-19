@@ -1,4 +1,3 @@
-language: swift
+language: objective-c
 xcode_project: tvSnake.xcodeproj
 osx_image: xcode7
-sudo: required
